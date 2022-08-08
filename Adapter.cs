@@ -1,13 +1,12 @@
-﻿namespace AdapterDesignPattern
+﻿namespace AdapterDesignPattern;
+
+public class Adapter : ITarget
 {
-    public class Adapter : ITarget
-    {
-        private readonly Adaptee _adaptee;
+    private readonly Adaptee _adaptee;
 
-        public Adapter(Adaptee adaptee) =>
-            _adaptee = adaptee;
+    public Adapter(Adaptee adaptee) =>
+        _adaptee = adaptee;
 
-        public string DoRequest() =>
-            $"Do '{_adaptee.DoAdapteeRequest()}'";
-    }
+    public string DoRequest() =>
+        $"Do '{_adaptee.DoAdapteeRequest()}'";
 }

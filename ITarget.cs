@@ -1,7 +1,6 @@
-﻿namespace AdapterDesignPattern
+﻿namespace AdapterDesignPattern;
+
+public interface ITarget
 {
-    public interface ITarget
-    {
-        string DoRequest();
-    }
+    string DoRequest();
 }

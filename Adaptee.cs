@@ -1,8 +1,7 @@
-﻿namespace AdapterDesignPattern
+﻿namespace AdapterDesignPattern;
+
+public class Adaptee
 {
-    public class Adaptee
-    {
-        public string DoAdapteeRequest() =>
-            "Adaptee request";
-    }
+    public string DoAdapteeRequest() =>
+        "Adaptee request";
 }
